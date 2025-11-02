@@ -1,0 +1,90 @@
+INFO:    squashfuse not found, will not be able to mount SIF or other squashfs files
+INFO:    fuse2fs not found, will not be able to mount EXT3 filesystems
+INFO:    gocryptfs not found, will not be able to use gocryptfs
+INFO:    Converting SIF file to temporary sandbox...
+INFO:    squashfuse not found, will not be able to mount SIF or other squashfs files
+INFO:    fuse2fs not found, will not be able to mount EXT3 filesystems
+INFO:    gocryptfs not found, will not be able to use gocryptfs
+INFO:    Converting SIF file to temporary sandbox...
+--------------------------------------------------------------------------
+WARNING: The default btl_vader_single_copy_mechanism CMA is
+not available due to different user namespaces.
+
+The vader shared memory BTL will fall back on another single-copy
+mechanism if one is available. This may result in lower performance.
+
+  Local host: anh-MS-7E26
+--------------------------------------------------------------------------
+/*---------------------------------------------------------------------------*\
+| =========                 |                                                 |
+| \\      /  F ield         | OpenFOAM: The Open Source CFD Toolbox           |
+|  \\    /   O peration     | Version:  2406                                  |
+|   \\  /    A nd           | Website:  www.openfoam.com                      |
+|    \\/     M anipulation  |                                                 |
+\*---------------------------------------------------------------------------*/
+Build  : _be01ca78-20240625 OPENFOAM=2406 version=2406
+Arch   : "LSB;label=32;scalar=64"
+Exec   : potentialFoam -parallel -writephi
+Date   : Nov 02 2025
+Time   : 18:55:00
+Host   : anh-MS-7E26
+PID    : 119536
+I/O    : uncollated
+Case   : /home/anh/Documents/ml-cfd-lecture/exercises/2-3/cylinder2D
+nProcs : 2
+Hosts  :
+(
+    (anh-MS-7E26 2)
+)
+Pstream initialized with:
+    floatTransfer      : false
+    maxCommsSize       : 0
+    nProcsSimpleSum    : 0
+    nonBlockingExchange: 0 (tuning: 0)
+    exchange algorithm : 0
+    commsType          : nonBlocking
+    polling iterations : 0
+trapFpe: Floating point exception trapping enabled (FOAM_SIGFPE).
+fileModificationChecking : Monitoring run-time modified files using timeStampMaster (fileModificationSkew 5, maxFileModificationPolls 20)
+allowSystemOperations : Allowing user-supplied system call operations
+
+// * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
+Create time
+
+Create mesh for time = 0
+
+
+potentialFlow: Operating solver in PISO mode
+
+Reading velocity field U
+
+Constructing pressure field p
+
+Constructing velocity potential field Phi
+
+No MRF models present
+
+
+Calculating potential flow
+GAMG:  Solving for Phi, Initial residual = 1, Final residual = 0.0073429375, No Iterations 9
+GAMG:  Solving for Phi, Initial residual = 0.02818447, Final residual = 0.00017240064, No Iterations 5
+GAMG:  Solving for Phi, Initial residual = 0.0018511347, Final residual = 1.0010339e-05, No Iterations 5
+GAMG:  Solving for Phi, Initial residual = 0.00051316178, Final residual = 1.9419022e-06, No Iterations 5
+GAMG:  Solving for Phi, Initial residual = 6.654205e-05, Final residual = 6.8778337e-07, No Iterations 3
+GAMG:  Solving for Phi, Initial residual = 1.5481682e-05, Final residual = 8.3345094e-07, No Iterations 2
+GAMG:  Solving for Phi, Initial residual = 3.2510652e-06, Final residual = 5.0954175e-07, No Iterations 1
+GAMG:  Solving for Phi, Initial residual = 9.6678669e-07, Final residual = 9.6678669e-07, No Iterations 0
+GAMG:  Solving for Phi, Initial residual = 9.6678669e-07, Final residual = 9.6678669e-07, No Iterations 0
+GAMG:  Solving for Phi, Initial residual = 9.6678669e-07, Final residual = 9.6678669e-07, No Iterations 0
+GAMG:  Solving for Phi, Initial residual = 9.6678669e-07, Final residual = 9.6678669e-07, No Iterations 0
+Continuity error = 5.6166748e-05
+Interpolated velocity error = 2.168573e-06
+ExecutionTime = 0.02 s  ClockTime = 0 s
+
+End
+
+Finalising parallel run
+INFO:    Cleaning up image...
+INFO:    Cleaning up image...
+[anh-MS-7E26:118604] 1 more process has sent help message help-btl-vader.txt / cma-different-user-namespace-warning
+[anh-MS-7E26:118604] Set MCA parameter "orte_base_help_aggregate" to 0 to see all help / error messages

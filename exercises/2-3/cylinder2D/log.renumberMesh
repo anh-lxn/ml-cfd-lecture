@@ -1,0 +1,93 @@
+INFO:    squashfuse not found, will not be able to mount SIF or other squashfs files
+INFO:    squashfuse not found, will not be able to mount SIF or other squashfs files
+INFO:    fuse2fs not found, will not be able to mount EXT3 filesystems
+INFO:    fuse2fs not found, will not be able to mount EXT3 filesystems
+INFO:    gocryptfs not found, will not be able to use gocryptfs
+INFO:    Converting SIF file to temporary sandbox...
+INFO:    gocryptfs not found, will not be able to use gocryptfs
+INFO:    Converting SIF file to temporary sandbox...
+--------------------------------------------------------------------------
+WARNING: The default btl_vader_single_copy_mechanism CMA is
+not available due to different user namespaces.
+
+The vader shared memory BTL will fall back on another single-copy
+mechanism if one is available. This may result in lower performance.
+
+  Local host: anh-MS-7E26
+--------------------------------------------------------------------------
+/*---------------------------------------------------------------------------*\
+| =========                 |                                                 |
+| \\      /  F ield         | OpenFOAM: The Open Source CFD Toolbox           |
+|  \\    /   O peration     | Version:  2406                                  |
+|   \\  /    A nd           | Website:  www.openfoam.com                      |
+|    \\/     M anipulation  |                                                 |
+\*---------------------------------------------------------------------------*/
+Build  : _be01ca78-20240625 OPENFOAM=2406 version=2406
+Arch   : "LSB;label=32;scalar=64"
+Exec   : renumberMesh -parallel -overwrite
+Date   : Nov 02 2025
+Time   : 18:54:44
+Host   : anh-MS-7E26
+PID    : 117551
+I/O    : uncollated
+Case   : /home/anh/Documents/ml-cfd-lecture/exercises/2-3/cylinder2D
+nProcs : 2
+Hosts  :
+(
+    (anh-MS-7E26 2)
+)
+Pstream initialized with:
+    floatTransfer      : false
+    maxCommsSize       : 0
+    nProcsSimpleSum    : 0
+    nonBlockingExchange: 0 (tuning: 0)
+    exchange algorithm : 0
+    commsType          : nonBlocking
+    polling iterations : 0
+trapFpe: Floating point exception trapping enabled (FOAM_SIGFPE).
+fileModificationChecking : Monitoring run-time modified files using timeStampMaster (fileModificationSkew 5, maxFileModificationPolls 20)
+allowSystemOperations : Allowing user-supplied system call operations
+
+// * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
+Create time
+
+Create mesh for time = 0
+
+Mesh region0 size: 9800
+Before renumbering
+    band           : 3265
+    profile        : 911891
+
+Using renumber-method: CuthillMcKee [default]
+
+Reading fields
+    volScalarField: p
+    volVectorField: U
+
+Renumbering processor cell decomposition map cellProcAddressing
+Renumbering processor face decomposition map faceProcAddressing
+Renumbering processor point decomposition map pointProcAddressing
+After renumbering
+    band           : 89
+    profile        : 542163
+
+Writing mesh to "constant"
+
+Timings:
+    read mesh   : 0.002817172
+    read fields : 0.000305639
+    decompose   : 0
+    cell-cells  : 0
+    renumber    : 0.000781198
+    write       : 0.015933827
+TotalTime = 0.024300645 s
+
+ExecutionTime = 0.01 s  ClockTime = 0 s
+
+End
+
+Finalising parallel run
+INFO:    Cleaning up image...
+INFO:    Cleaning up image...
+[anh-MS-7E26:117358] 1 more process has sent help message help-btl-vader.txt / cma-different-user-namespace-warning
+[anh-MS-7E26:117358] Set MCA parameter "orte_base_help_aggregate" to 0 to see all help / error messages

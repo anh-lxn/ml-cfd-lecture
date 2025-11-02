@@ -1,0 +1,34 @@
+INFO:    squashfuse not found, will not be able to mount SIF or other squashfs files
+INFO:    fuse2fs not found, will not be able to mount EXT3 filesystems
+INFO:    gocryptfs not found, will not be able to use gocryptfs
+INFO:    Converting SIF file to temporary sandbox...
+Using:
+  case     : /home/anh/Documents/ml-cfd-lecture/exercises/2-3/cylinder2D
+  log      : log.pimpleFoam
+  database : /usr/lib/openfoam/openfoam2406/bin/tools/foamLog.db
+  awk file : logs/foamLog.awk
+  files to : logs
+
+Executing: awk -f logs/foamLog.awk log.pimpleFoam
+
+Generated XY files for:
+    CourantMax
+    CourantMean
+    Separator
+    Time
+    Ux
+    UxFinalRes
+    UxIters
+    Uy
+    UyFinalRes
+    UyIters
+    clockTime
+    contCumulative
+    contGlobal
+    contLocal
+    executionTime
+    p
+    pFinalRes
+    pIters
+End
+INFO:    Cleaning up image...

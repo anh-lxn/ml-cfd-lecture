@@ -1,0 +1,138 @@
+INFO:    squashfuse not found, will not be able to mount SIF or other squashfs files
+INFO:    fuse2fs not found, will not be able to mount EXT3 filesystems
+INFO:    gocryptfs not found, will not be able to use gocryptfs
+INFO:    Converting SIF file to temporary sandbox...
+/*---------------------------------------------------------------------------*\
+| =========                 |                                                 |
+| \\      /  F ield         | OpenFOAM: The Open Source CFD Toolbox           |
+|  \\    /   O peration     | Version:  2406                                  |
+|   \\  /    A nd           | Website:  www.openfoam.com                      |
+|    \\/     M anipulation  |                                                 |
+\*---------------------------------------------------------------------------*/
+Build  : _be01ca78-20240625 OPENFOAM=2406 version=2406
+Arch   : "LSB;label=32;scalar=64"
+Exec   : blockMesh
+Date   : Nov 02 2025
+Time   : 18:54:18
+Host   : anh-MS-7E26
+PID    : 115926
+I/O    : uncollated
+Case   : /home/anh/Documents/ml-cfd-lecture/exercises/2-3/cylinder2D
+nProcs : 1
+trapFpe: Floating point exception trapping enabled (FOAM_SIGFPE).
+fileModificationChecking : Monitoring run-time modified files using timeStampMaster (fileModificationSkew 5, maxFileModificationPolls 20)
+allowSystemOperations : Allowing user-supplied system call operations
+
+// * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
+Create time
+
+Creating block mesh from "system/blockMeshDict"
+Creating block edges
+No non-planar block faces defined
+Creating topology blocks
+
+Creating topology patches - from boundary section
+
+Creating block mesh topology
+
+Check topology
+
+	Basic statistics
+		Number of internal faces : 16
+		Number of boundary faces : 40
+		Number of defined boundary faces : 40
+		Number of undefined boundary faces : 0
+	Checking patch -> block consistency
+
+Creating block offsets
+Creating merge list (topological search)...
+
+Creating polyMesh from blockMesh
+Creating patches
+Creating cells
+Creating points with scale (1 1 1)
+    Block 0 cell size :
+        i : 0.0093933983 .. 0.0093933983
+        j : 0.0038065906 .. 0.0095164765
+        k : 0.01 .. 0.01
+
+    Block 1 cell size :
+        i : 0.0084852814 .. 0.0084852814
+        j : 0.0038065906 .. 0.0095164765
+        k : 0.01 .. 0.01
+
+    Block 2 cell size :
+        i : 0.0087381264 .. 0.034952506
+        j : 0.0038065906 .. 0.0095164765
+        k : 0.01 .. 0.01
+
+    Block 3 cell size :
+        i : 0.0093933983 .. 0.0093933983
+        j : 0.0084852814 .. 0.0084852814
+        k : 0.01 .. 0.01
+
+    Block 4 cell size :
+        i : 0.0084096931 .. 0.00084096931
+        j : 0.008714066 .. 0.008714066
+        k : 0.01 .. 0.01
+
+    Block 5 cell size :
+        i : 0.0084096931 .. 0.00084096931
+        j : 0.008714066 .. 0.008714066
+        k : 0.01 .. 0.01
+
+    Block 6 cell size :
+        i : 0.0084096931 .. 0.00084096931
+        j : 0.008714066 .. 0.008714066
+        k : 0.01 .. 0.01
+
+    Block 7 cell size :
+        i : 0.0084096931 .. 0.00084096931
+        j : 0.008714066 .. 0.008714066
+        k : 0.01 .. 0.01
+
+    Block 8 cell size :
+        i : 0.0087381264 .. 0.034952506
+        j : 0.008714066 .. 0.008714066
+        k : 0.01 .. 0.01
+
+    Block 9 cell size :
+        i : 0.0093933983 .. 0.0093933983
+        j : 0.010529579 .. 0.0042118317
+        k : 0.01 .. 0.01
+
+    Block 10 cell size :
+        i : 0.008714066 .. 0.008714066
+        j : 0.010529579 .. 0.0042118317
+        k : 0.01 .. 0.01
+
+    Block 11 cell size :
+        i : 0.0087381264 .. 0.034952506
+        j : 0.010529579 .. 0.0042118317
+        k : 0.01 .. 0.01
+
+No patch pairs to merge
+
+Writing polyMesh with 0 cellZones
+----------------
+Mesh Information
+----------------
+  boundingBox: (0 0 0) (2.2 0.41 0.01)
+  nPoints: 20080
+  nCells: 9800
+  nFaces: 39440
+  nInternalFaces: 19360
+----------------
+Patches
+----------------
+  patch 0 (start: 19360 size: 135) name: top
+  patch 1 (start: 19495 size: 135) name: bottom
+  patch 2 (start: 19630 size: 55) name: inlet
+  patch 3 (start: 19685 size: 55) name: outlet
+  patch 4 (start: 19740 size: 9800) name: back
+  patch 5 (start: 29540 size: 9800) name: front
+  patch 6 (start: 39340 size: 100) name: cylinder
+
+End
+
+INFO:    Cleaning up image...
