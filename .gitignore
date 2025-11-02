@@ -13,9 +13,4 @@ drl_test_1
 ml-cfd
 openfoam
 venv
-postProcessing/
-processor*/
-logs/
-*.foam
-*.avi
-*.png
+exercises/
