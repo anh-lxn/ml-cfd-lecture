@@ -13,4 +13,5 @@ drl_test_1
 ml-cfd
 openfoam
 venv
-exercises/
+exercises/*
+!exercises/*.ipynb
